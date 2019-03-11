@@ -1,0 +1,107 @@
+# Use '&' for color codes
+# The available placeholder keys for every message are listed on top of it
+# You can use placeholders by typing "%" + key (Examples: %player, %hearts)
+#
+# Single Line Example:
+# # Placeholders: player
+# player_joined: "&e%player joined the game."
+#
+# Multiple Lines Example:
+# # Placeholders: player
+# player_joined:
+# - "&3%player joined for the first time!"
+# - "&3Welcome, %player!"
+
+##--------##
+## PREFIX ##
+##--------##
+
+# This is a special message, it'll appear in front of every death message
+# This message must have one line
+# You can disable the prefix by replacing it with the following line:
+# prefix: ""
+prefix: "&f[&8Death&f] &7"
+
+##----------------##
+## DEATH MESSAGES ##
+##----------------##
+
+# [] Placeholders: name, display_name
+# [_mob] Placeholders: name, display_name, mob
+# [_player] Placeholders: name, display_name, killer_name, killer_display_name
+
+projectile: "&8%name &7was shot to death"
+projectile_mob: "&8%name &7was shot by a &8%mob"
+projectile_player: "&8%name &7was shot by &8%killer_name"
+
+cactus: "&8%name &7hugged a cactus"
+cactus_mob: "&8%name &7hugged a cactus while fighting a &8%mob"
+cactus_player: "&8%name &7hugged a cactus while fighting &8%killer_name"
+
+drowned: "&8%name &7forgot how to swim"
+drowned_mob: "&8%name &7drowned while fighting a &8%mob"
+drowned_player: "&8%name &7drowned while fighting &8%killer_name"
+
+suffocated: "&8%name &7suffocated in a wall"
+suffocated_mob: "&8%name &7suffocated while battling a &8%mob"
+suffocated_player: "&8%name &7suffocated while battling &8%killer_name"
+
+elytra: "&8%name &7crashed into a wall"
+elytra_mob: "&8%name &7crashed into a wall while fighting a &8%mob"
+elytra_player: "&8%name &7crashed into a wall while fighting &8%killer_name"
+
+blown_up: "&8%name &7blew up"
+blown_up_mob: "&8%name &7blew up while fighting a &8%mob"
+blown_up_player: "&8%name &7blew up while fighting &8%killer_name"
+
+falling: "&8%name &7fell from a high place"
+falling_mob: "&8%name &7fell from a high place while fighting a &8%mob"
+falling_player: "&8%name &7fell from a high place while fighting &8%killer_name"
+
+fire: "&8%name &7burned to death"
+fire_mob: "&8%name &7burned to death while fighting a &8%mob"
+fire_player: "&8%name &7burned to death while fighting &8%killer_name"
+
+falling_block: "&8%name &7was squashed by a falling block"
+falling_block_mob: "&8%name &7was squashed by a falling block while fighting a &8%mob"
+falling_block_player: "&8%name &7was squashed by a falling block while fighting &8%killer_name"
+
+lightning: "&8%name &7angered the gods"
+lightning_mob: "&8name &7was struck by a lightning while fighting a &8%mob"
+lightning_player: "&8name &7was struck by a lightning while fighting &8%killer_name"
+
+lava: "&8%name &7tried to swim in red water"
+lava_mob: "&8%name &7tried to swim in lava while fighting a &8%mob"
+lava_player: "&8%name &7tried to swim in lava while fighting &8%killer_name"
+
+magma: "&8%name &7discovered the floor was lava"
+magma_mob: "&8%name &7discovered the floor was lava while fighting a &8%mob"
+magma_player: "&8%name &7discovered the floor was lava while fighting &8%killer_name"
+
+potions: "&8%name &7didn't believe in magic"
+potions_mob: "&8%name &7was killed by a &8%mob &7using magic"
+potions_player: "&8%name &7was killed by &8%killer_name &7using magic"
+
+starving: "&8%name &7starved to death"
+starving_mob: "&8%name &7starved to death while fighting a &8%mob"
+starving_player: "&8%name &7starved to death while fighting &8%killer_name"
+
+thorns:
+- "&8%name &7is confused"
+- "&7It hurts itself in its confusion"
+- "&8%name &7fainted"
+thorns_mob: "&8%name &7was killed while trying to hurt a &8%mob"
+thorns_player: "&8%name &7was killed while trying to hurt &8%killer_name"
+
+void: "&8%name &7fell out of the world"
+void_mob: "&8%name &7fell out of the world while fighting a &8%mob"
+void_player: "&8%name &7fell out of the world while fighting &8%killer_name"
+
+wither: "&8%name &7withered away"
+wither_mob: "&8%name &7withered away while fighting a &8%mob"
+wither_player: "&8%name &7withered away while fighting &8%killer_name"
+
+slain_mob: "&8%name &7was slain by a &8%mob"
+slain_player: "&8%name &7was slain by &8%killer_name"
+
+unknown: "&8%name &7died"

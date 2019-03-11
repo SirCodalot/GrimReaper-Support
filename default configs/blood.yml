@@ -1,0 +1,226 @@
+## Example:
+##
+## red:
+##   icon:
+##     type: INK_SACK:1
+##     display_name: "&cRed Blood"
+##     lore:
+##     - ""
+##     - "&7Red Blood"
+##   permission: "grimreaper.blood.red"
+##   price: 10 [Optional, Requires Vault]
+##   amount: 16
+##   duration: 3
+##   items:
+##   - INK_SACK#1
+
+blood_types:
+  # Blood ID
+  red:
+    # Blood icon, will appear in the blood menu
+    icon:
+      # The icon's item type. Format: MATERIAL:DURABILITY
+      type: INK_SACK:1
+      # The icon's name
+      display_name: "&cRed Blood"
+      # The icon's lore
+      lore:
+      - ""
+      - "&7Normal red blood"
+    # Permission that players must have to buy / select this blood
+    permission: "grimreaper.blood.red"
+    # [OPTIONAL] If this field exists, players will need to buy the blood before selecting it. You must have vault to use this feature
+    #price: 10
+    # The amount of items that will be dropped
+    amount: 16
+    # How many seconds will pass before the blood disappear
+    duration: 3
+    # The items that will be dropped. Format: MATERIAL:DURABILITY
+    items:
+    - INK_SACK:1
+
+  orange:
+    icon:
+      type: INK_SACK:14
+      display_name: "&6Orange Blood"
+      lore: []
+    permission: "grimreaper.blood.orange"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:14
+
+  yellow:
+    icon:
+      type: INK_SACK:11
+      display_name: "&eYellow Blood"
+      lore: []
+    permission: "grimreaper.blood.yellow"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:11
+
+  lime:
+    icon:
+      type: INK_SACK:10
+      display_name: "&aLime Blood"
+      lore: []
+    permission: "grimreaper.blood.lime"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:10
+
+  green:
+    icon:
+      type: INK_SACK:2
+      display_name: "&2Green Blood"
+      lore: []
+    permission: "grimreaper.blood.green"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:2
+
+  cyan:
+    icon:
+      type: INK_SACK:6
+      display_name: "&3Cyan Blood"
+      lore: []
+    permission: "grimreaper.blood.cyan"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:6
+
+  aqua:
+    icon:
+      type: INK_SACK:12
+      display_name: "&bAqua Blood"
+      lore: []
+    permission: "grimreaper.blood.orange"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:12
+
+  blue:
+    icon:
+      type: INK_SACK:4
+      display_name: "&9Blue Blood"
+      lore: []
+    permission: "grimreaper.blood.orange"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:4
+
+  purple:
+    icon:
+      type: INK_SACK:5
+      display_name: "&5Purple Blood"
+      lore: []
+    permission: "grimreaper.blood.purple"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:5
+
+  magenta:
+    icon:
+      type: INK_SACK:13
+      display_name: "&5M&da&5g&de&5n&dt&5a &dB&5l&do&5o&dd"
+      lore: []
+    permission: "grimreaper.blood.magenta"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:13
+
+  pink:
+    icon:
+      type: INK_SACK:9
+      display_name: "&dPink Blood"
+      lore: []
+    permission: "grimreaper.blood.pink"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:9
+
+  white:
+    icon:
+      type: INK_SACK:15
+      display_name: "&fWhite Blood"
+      lore: []
+    permission: "grimreaper.blood.white"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:15
+
+  light gray:
+    icon:
+      type: INK_SACK:7
+      display_name: "&7Light Gray Blood"
+      lore: []
+    permission: "grimreaper.blood.light_gray"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:7
+
+  gray:
+    icon:
+      type: INK_SACK:8
+      display_name: "&8Gray Blood"
+      lore: []
+    permission: "grimreaper.blood.gray"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:8
+
+  black:
+    icon:
+      type: COAL:0
+      display_name: "&0Black Blood"
+      lore: []
+    permission: "grimreaper.blood.black"
+    # price; 10
+    amount: 16
+    duration: 3
+    items:
+    - COAL:0
+
+  rainbow:
+    icon:
+      type: NETHER_STAR:0
+      display_name: "&cR&6a&ei&an&bb&9o&dw &cB&6l&eo&ao&bd"
+      lore:
+      - ""
+      - "&7Fabulous blood"
+    permission: "grimreaper.blood.rainbow"
+    amount: 16
+    duration: 3
+    items:
+    - INK_SACK:1
+    - INK_SACK:11
+    - INK_SACK:10
+    - INK_SACK:9
+    - INK_SACK:14
+    - INK_SACK:12

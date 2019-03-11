@@ -1,0 +1,152 @@
+##---------------------##
+## GRIM REAPER         ##
+##       By SirCodalot ##
+##---------------------##
+
+# If you want to report a bug, please private message the developer on SpigotMC.org:
+# https://www.spigotmc.org/members/141464/
+
+##------------------##
+## GENERAL SETTINGS ##
+##------------------##
+
+# If this feature is enabled, a title will play when a player dies.
+# The message can be configured in messages.yml
+death_title: true
+
+# If this feature is enabled, mob drops and corpse drops will automatically go into the killer's inventory.
+auto_loot: false
+
+# If this feature is enabled, a message will be broadcasted when a player dies.
+death_messages: true
+
+# If this feature is enabled, a harmless lightning will strike when a player dies.
+death_lightning: true
+
+# If a player gets hurt by an entity and then dies before this timer ends, it
+# will count the entity as the killer. (The timer is in seconds)
+combat_timer: 10
+
+# How many players it'll show when someone does /deathtop and /killtop
+ranking_slots_count: 10
+
+# How much experience will drop when a player dies.
+# A random multiplier will be generated between the 'minimum' value to the 'maximum' value.
+experience_drop:
+  minimum: 0.5
+  maximum: 1
+
+# If enabled, players will spawn where they died.
+# This features overrides the spawn-points feature.
+respawn_at_death_location: false
+
+# Enables the statistics commands (/killtop, /deathtop, /bountiestop)
+# Requires /reload or a restart
+statistics: true
+
+##----------##
+## BOUNTIES ##
+##----------##
+# If this feature is enabled, players can put bounties on someone's head
+
+# * This feature requires Vault
+
+# Toggle this feature
+# Requires /reload or a restart
+bounties_enabled: true
+
+# The maximum bounty that can be put on someone's head
+bounties_max: 10000
+
+##-------------##
+## SPAWNPOINTS ##
+##-------------##
+# If this feature is enabled, you'll be able to make multiple spawnpoints.
+
+# * This feature will override spawnpoint features from spawns plugins
+# * You need to reload or restart the server in order to toggle this feature
+
+# Toggle this feature
+spawnpoints_enabled: true
+
+##--------##
+## SKULLS ##
+##--------##
+# If this feature is enabled, players will drop their heads when they die.
+
+# * Players with the keep-inventory permission will not drop their skulls
+
+# Toggle this feature
+skulls_enabled: true
+
+# The skull items' name
+# * Use '%player' as the player's name
+skulls_name: "&6%player&c's Skull"
+
+##-----------------##
+## BLOOD PARTICLES ##
+##-----------------##
+# If this feature is enabled, entities will bleed when getting damaged
+
+# * This feature is different than the one that can be configured in blood.yml
+
+# Toggle this feature
+blood_particles_enabled: true
+
+# The texture of the blood particles
+blood_particles_type: REDSTONE_BLOCK:0
+
+##---------##
+## CORPSES ##
+##---------##
+# If this feature is enabled, dead bodies will spawn when players die.
+# These dead bodies will hold the dropped items. Players can loot
+# corpses by sneaking while standing on them.
+
+# * Players with the keep-inventory permission will not have corpses
+
+# Toggle this feature
+corpses_enabled: true
+
+# Toggle the text above the corpses
+corpses_holograms: true
+
+# How many seconds will pass before a corpse will despawn
+corpses_duration: 300
+
+# When enabled, players won't be able to loot spawns players' corpses
+corpses_safe: false
+
+##------------##
+## SPECTATORS ##
+##------------##
+# If this feature is enabled, players will temporarily become spectators when
+# they die (unless they have the bypass permission).
+
+# * While being a spectator, players won't be able to teleport with the
+#   teleport hotbar.
+
+# Toggle this feature
+spectators_enabled: true
+
+# How many seconds will pass before a spectator respawns
+spectators_duration: 10
+
+# When enabled, spectators will be able to go through blocks
+spectators_noclip: true
+
+##------------##
+## RED SCREEN ##
+##------------##
+# If this feature is enabled, a red screen effect will appear whenever a
+# player's health is low.
+
+# * Players with the red screen effect won't be able to interact with blocks.
+#   This is something that cannot be fixed, so please don't report this as
+#   a bug.
+
+# Toggle this feature
+red_screen_enabled: true
+
+# When a player's hp is lower than this number, it will activate the effect
+red_screen_max_hp: 3

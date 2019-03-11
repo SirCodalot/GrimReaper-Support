@@ -1,0 +1,286 @@
+# Use '&' for color codes
+# The available placeholder keys for every message are listed on top of it
+# You can use placeholders by typing "%" + key (Examples: %player, %hearts)
+#
+# There are three types of messages:
+# Chat - A normal message that will appear in chat
+# Title - A text that will be displayed in the middle of the player's screen. Titles can have up to two lines
+# Hologram - A text that will be displayed somewhere in the world and will always face the player. Very similar to floating player nametags.
+#
+# Single Line Example:
+# # Type: Chat
+# # Placeholders: player
+# player_joined: "&e%player joined the game."
+#
+# Multiple Lines Example:
+# # Type: Chat
+# # Placeholders: player
+# player_joined:
+# - "&3%player joined for the first time!"
+# - "&3Welcome, %player!"
+
+##--------##
+## PREFIX ##
+##--------##
+
+# This is a special message, it'll appear in front of every chat message
+# This message must have one line
+# You can disable the prefix by replacing it with the following line:
+# prefix: ""
+prefix: "&f[&cGrimReaper&f] &7"
+
+##------------------##
+## COMMAND MESSAGES ##
+##------------------##
+
+# Type: Chat
+cmd_must_be_player: "&cYou must be a player to execute this command."
+
+# Type: Chat
+cmd_no_permission: "&cYou don't have permission to execute this command."
+
+# Type: Chat
+cmd_invalid_usage: "&cInvalid usage."
+
+# Type: Chat
+cmd_invalid_number: "&cInvalid number."
+
+# Type: Chat
+# Placeholders: player
+cmd_offline_player: "&cThis player is offline."
+
+# Type: Chat
+cmd_not_enough_money: "&cYou don't have enough money to do this."
+
+# Type: Chat
+# Placeholders: player
+cmd_kill: "You killed &c%player&7."
+
+# Type: Chat
+cmd_suicide: "You killed yourself."
+
+# Type: Chat
+cmd_reload: "Successfully reloaded the config files."
+
+# Type: Chat
+cmd_disabled_feature: "&cThis feature is disabled."
+
+# Type: Chat
+data_not_found: "&cUnable to find this player's data."
+
+# Type: Chat
+self_already_dead: "&cYou are already dead."
+
+# Type: Chat
+player_already_dead: "&cThis player is already dead."
+
+##---------##
+## CORPSES ##
+##---------##
+
+# Type: Hologram
+# Placeholders: name, display_name
+corpse_hologram:
+- "&c%name&7's Corpse"
+- "&6Click to Loot"
+
+# Type: Chat
+corpses_other: "&cYou can't loot someone else's corpse."
+
+##------------##
+## STATISTICS ##
+##------------##
+
+# Type: Chat
+# Placeholders: kills
+kills: "Kills: &c%kills"
+
+# Type: Chat
+# Placeholders: name, display_name, kills
+kills_other: "&c%name&7's Kills: &c%kills"
+
+# Type: Chat
+# Placeholders: deaths
+deaths: "Deaths: &c%deaths"
+
+# Type: Chat
+# Placeholders: name, display_name, deaths
+deaths_other: "&c%name&7's Deaths: &c%deaths"
+
+# Type: Chat
+kill_top_title: "Top Kills:"
+
+# Type: Chat
+# Placeholders: name, display_name, rank, kills
+# Info: No Prefix
+kill_top_slot: "&7%rank. &c%name&7: &c%kills Kills"
+
+# Type: Chat
+death_top_title: "Top Deaths:"
+
+# Type: Chat
+# Placeholders: name, display_name, rank, deaths
+# Info: No Prefix
+death_top_slot: "&7%rank. &c%name&7: &c%deaths Deaths"
+
+# Type: Chat
+bounty_top_title: "Top Bounties:"
+
+# Type: Chat
+# Placeholders: name, display_name, rank, bounty
+# Info: No Prefix
+bounty_top_slot: "&7%rank. &c%name&7: &c$%bounty"
+
+# Type: Chat
+# Placeholders: name, display_name, amount
+kills_set: "Successfully set &c%name&7's kills to &c%amount&7."
+
+# Type: Chat
+# Placeholders: amount
+kills_set_player: "Your kill-count is set to &c%amount&7."
+
+# Type: Chat
+# Placeholders: name, display_name, amount
+deaths_set: "Successfully set &c%name&7's deaths to &c%amount&7."
+
+# Type: Chat
+# Placeholders: amount
+deaths_set_player: "Your death-count is set to &c%amount&7."
+
+# Type: Chat
+statistics_not_loaded: "&cThe statistics are being calculated."
+
+# Type: Chat
+loaded_statistics: "Successfully loaded the statistics."
+
+##----------##
+## BOUNTIES ##
+##----------##
+
+# Type: Chat
+# Placeholders: player, bounty
+bounty_display: "&c%player&7's Bounty: &c$%bounty"
+
+# Type: Chat
+# Placeholders: player, amount
+bounty_placed_placer: "You placed a bounty of &c$%amount &7on &c%player&7's head."
+
+# Type: Chat
+# Placeholders: placer, amount
+bounty_placed_player: "&c%placer &7placed a bounty of &c$%amount &7on your head."
+
+# Type: Chat
+# Placeholders: placer, player, amount
+bounty_placed_broadcast: "&c%placer &7placed a bounty of &c$%amount &7on &c%player&7's head."
+
+# Type: Chat
+# Placeholders: player, amount
+bounty_redeemed: "You received &c$%amount &7for killing &c%player&7."
+
+##----------------##
+## SPAWN MESSAGES ##
+##----------------##
+
+# Type: Chat
+spawn_name_taken: "&cThis name is already taken by another spawn."
+
+# Type: Chat
+spawn_not_found: "&cThis spawn doesn't exist."
+
+# Type: Chat
+# Placeholders: name, x, y, z, world
+spawn_created: "Successfully created &c%name &7at &c%x&7, &c%y&7, &c%z&7."
+
+# Type: Chat
+# Placeholders: name, x, y, z, world
+spawn_deleted: "Successfully deleted &c%name&7."
+
+# Type: Chat
+# Placeholders: name
+spawn_set_default: "Successfully set &c%name&7 as the default spawn."
+
+# Type: Chat
+# Placeholders: name
+spawn_teleported: "Teleported to &c%name&7."
+
+# Type: Chat
+spawn_list_header: "Spawnpoints:"
+
+# Type: Chat
+# Placeholders: name, x, y, z, world
+spawn_list_object: " &7%name: &c%x %y %z"
+
+# Type: Chat
+spawn_rename: "Enter a new name in chat."
+
+# Type: Chat
+spawn_taken: "&cThis name is already taken."
+
+# Type: Chat
+spawn_set_permission: "Eneter a new permission node in chat."
+
+##----------------##
+## BLOOD MESSAGES ##
+##----------------##
+
+# Type: Chat
+# Placeholders: blood
+blood_selected: "Your blood color is now set to &c%blood&7."
+
+# Type: Chat
+blood_disabled: "You disabled your blood."
+
+# Type: Chat
+# Placeholders: blood
+blood_unlocked: "You unlocked &c%blood&7."
+
+# Type: Chat
+# Placeholders: blood
+blood_no_permission: "&cYou don't have permission to use this blood."
+
+# Type: Chat
+# Placeholders: blood, price
+blood_not_enough_money: "&cYou don't have enough money to unlock this blood."
+
+##---------------------------##
+## PROJECTILE TRAIL MESSAGES ##
+##---------------------------##
+
+# Type: Chat
+# Placeholders: trail
+ptrail_selected: "Your projectile trail is now set to &c%trail&7."
+
+# Type: Chat
+ptrail_disabled: "You disabled your projectile trail."
+
+# Type: Chat
+# Placeholders: trail
+ptrail_unlocked: "You unlocked &c%trail&7."
+
+# Type: Chat
+# Placeholders: trail
+ptrail_no_permission: "&cYou don't have permission to use this projectile trail."
+
+# Type: Chat
+# Placeholders: trail, price
+ptrail_not_enough_money: "&cYou don't have enough money to unlock this projectile trail."
+
+##---------------##
+## DEATH RELATED ##
+##---------------##
+# Custom death messages can be configured in death_messages.yml
+
+# Type: Title
+death_title:
+- "&c&lYOU DIED"
+- "&7Better Luck Next Time"
+
+# Type: Chat
+# Placeholders: time
+spectator_message: "&8You are a spectator, you will respawn in &c%time &8seconds."
+
+# Type: Title
+# Placeholders: time
+spectator_title:
+- "&8&lSPECTATING"
+- "&7You Will Respawn in %time Seconds"

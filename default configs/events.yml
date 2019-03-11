@@ -1,0 +1,33 @@
+## Example:
+##
+## # a kill event
+## '100':
+##    override: true
+##    commands:
+##      - "eco give %name 10"
+##      - "broadcast &c%display_name &7reached &c100 kills&7!"
+
+# Events that will be executed when a player dies
+death_events:
+  # Current Number of deaths. Can be set to '*' if you want the event to happen for every amount
+  '*':
+    # Should this event override spawns events that need to be executed
+    override: false
+    # A list of commands that will be automatically executed through the console
+    # Placeholders: %name, %display_name
+    commands: []
+
+# Events that will be executed when a player kills someone
+kill_events:
+  '*':
+    override: false
+    commands:
+      - "eco give %name 10"
+  '10':
+    override: true
+    commands:
+      - "eco give %name 100"
+  '100':
+    override: true
+    commands:
+      - "eco give %name 500"

@@ -1,0 +1,94 @@
+## Example:
+##
+## flame:
+##   icon:
+##     type: BLAZE_POWDER
+## display_name: "§6Flame Trail"
+## lore:
+##   - ""
+##   - "§7Become the hottest sniper in the world"
+## permission: "grimreaper.projectiletrail.flame"
+## particle: FLAME
+## #price: 10
+
+# * Different Minecraft Versions Have Different Particles
+
+projectile_trails:
+  # Trail ID
+  flame:
+    # Trail icon, will appear in the trail menu
+    icon:
+      # The icon's item type. Format: MATERIAL:DURABILITY
+      type: BLAZE_POWDER
+      # The icon's name
+      display_name: "&6Flame Trail"
+      # The icon's lore
+      lore:
+        - ""
+        - "&7Become the hottest sniper in the world"
+    # Permission that players must have to buy / select this blood
+    permission: "grimreaper.projectiletrail.flame"
+    # The particle's name
+    particle: FLAME
+    # [OPTIONAL] If this field exists, players will need to buy the blood before selecting it. You must have vault to use this feature
+    #price: 10
+  note:
+    icon:
+      type: MUSIC_DISC_MALL
+      display_name: "&dNote Trail"
+      lore:
+        - ""
+        - "&7Shoot your enemies in style"
+    permission: "grimreaper.projectiletrail.note"
+    particle: NOTE
+    #price: 10
+  cloud:
+    icon:
+      type: BONE_MEAL
+      display_name: "&fCloud Trail"
+      lore:
+        - ""
+        - "&7The fluffiest trail in the world"
+    permission: "grimreaper.projectiletrail.cloud"
+    particle: CLOUD
+    #price: 10
+  heart:
+    icon:
+      type: POPPY
+      display_name: "&cHeart Trail"
+      lore:
+        - ""
+        - "&7Don't tell Cupid we stole his arrows"
+    permission: "grimreaper.projectiletrail.heart"
+    particle: HEART
+    #price: 10
+  fireworks:
+    icon:
+      type: FIREWORK_ROCKET
+      display_name: "&fFireworks Trail"
+      lore:
+        - ""
+        - "&7Perfect for parties"
+    permission: "grimreaper.projectiletrail.fireworks"
+    particle: FIREWORKS_SPARK
+    #price: 10
+  slime:
+    icon:
+      type: SLIME_BALL
+      display_name: "&aSlime Trail"
+      lore:
+        - ""
+        - "&7Very Sticky"
+    permission: "grimreaper.projectiletrail.slime"
+    particle: SLIME
+    #price: 10
+  magic:
+    icon:
+      type: MAGMA_CREAM
+      display_name: "&8Magical Trail"
+      lore:
+        - ""
+        - "&7Curse your targets"
+    permission: "grimreaper.projectiletrail.magic"
+    particle: SPELL
+    #price: 10
