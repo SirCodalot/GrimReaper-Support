@@ -44,6 +44,11 @@ respawn_at_death_location: false
 # Requires /reload or a restart
 statistics: true
 
+# These items won't be dropped when players die, even for players without the keepinventory permission
+#undroppable_items: []
+undroppable_items:
+  - BARRIER
+
 ##----------##
 ## BOUNTIES ##
 ##----------##
@@ -101,7 +106,7 @@ blood_particles_type: REDSTONE_BLOCK:0
 ##---------##
 # If this feature is enabled, dead bodies will spawn when players die.
 # These dead bodies will hold the dropped items. Players can loot
-# corpses by sneaking while standing on them.
+# corpses by clicking on the corpse.
 
 # * Players with the keep-inventory permission will not have corpses
 
@@ -116,6 +121,10 @@ corpses_duration: 300
 
 # When enabled, players won't be able to loot spawns players' corpses
 corpses_safe: false
+
+# If disabled, corpses won't be lootable and the loot will drop normally next to the corpse
+# * If you disable this, you should change the hologram message as it says "Click to Loot" by default
+corpses_lootable: true
 
 ##------------##
 ## SPECTATORS ##
@@ -134,6 +143,15 @@ spectators_duration: 10
 
 # When enabled, spectators will be able to go through blocks
 spectators_noclip: true
+
+# Players won't be able to execute these commands in spectator mode
+# * Put '*' to block all commands
+spectators_command_blacklist:
+  - '*'
+
+# If set to true, GrimReaper will cancel any spectator teleportation that is caused by another plugin
+# This includes commands such as tp, tpa, home, spawn, warp, etc...
+spectators_teleportation_blocker: true
 
 ##------------##
 ## RED SCREEN ##

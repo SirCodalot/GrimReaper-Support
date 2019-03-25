@@ -265,6 +265,26 @@ ptrail_no_permission: "&cYou don't have permission to use this projectile trail.
 # Placeholders: trail, price
 ptrail_not_enough_money: "&cYou don't have enough money to unlock this projectile trail."
 
+##------------##
+## SPECTATORS ##
+##------------##
+
+# Type: Chat
+# Placeholders: time
+spectator_message: "&8You are a spectator, you will respawn in &c%time &8seconds."
+
+# Type: Chat
+spectator_command_blocked: "&cSpectators can't use this command."
+
+# Type: Chat
+spectator_teleportation_blocked: "&cSpectators can't teleport."
+
+# Type: Title
+# Placeholders: time
+spectator_title:
+  - "&8&lSPECTATING"
+  - "&7You Will Respawn in %time Seconds"
+
 ##---------------##
 ## DEATH RELATED ##
 ##---------------##
@@ -274,13 +294,3 @@ ptrail_not_enough_money: "&cYou don't have enough money to unlock this projectil
 death_title:
 - "&c&lYOU DIED"
 - "&7Better Luck Next Time"
-
-# Type: Chat
-# Placeholders: time
-spectator_message: "&8You are a spectator, you will respawn in &c%time &8seconds."
-
-# Type: Title
-# Placeholders: time
-spectator_title:
-- "&8&lSPECTATING"
-- "&7You Will Respawn in %time Seconds"
